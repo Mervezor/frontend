@@ -1,0 +1,311 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>proje</title>
+<style>
+	#beyazkutu{ width: 804px;
+		height: 1024px;
+		background: white;
+		color:#AE0002;
+		margin:100px auto 100px  auto ;
+		
+		
+	}	
+	#anakutu{
+		 width: 270px; 
+		height: 400px;
+		background: white;
+		color:#000000; 
+		margin: auto 250px 50px ;
+		border: 1px double #000000 ;
+		border-radius: 10px 10px 10px 10px;
+		transform: translate(0%,-1.5%);
+		
+	
+	}
+	#anabaslik{
+		
+		width: 130px; 
+		height: 70px; 
+		background: white; 
+		color:black; 
+		margin:50px auto auto 250px ;
+		border: 1px double #000000 ;
+		border-radius: 10px 10px 0px 0px;
+		float: inherit;
+		border-bottom: medium;
+		transform: translate(0%,50%)
+		
+	}
+	#gricizgi{
+		width: 804px; 
+		height: 20px;
+		background: #A6A0A0;
+		color: #000000;
+		margin: 50px 250px 20px auto ;
+	}
+	
+	#text1{
+		border: 0;
+		padding: 10px 10px;
+		color:#CF4042;
+		margin:10px auto;
+		font-weight: bold;
+		font-size: 600;
+	    position: absolute;
+		
+			
+	}
+	
+	#metin1{
+		width: 250px;
+		height: 150px;
+		border: 0;
+		margin: auto 25px;
+		
+		
+	}
+	#buton{
+		width: 80px;
+		height: px;
+		background-color:white;
+		margin: 2px auto auto 25px;
+		border: 0;
+		
+	}
+	#button2{
+		margin:5px 245px 5px 230px;
+	    background-color: gray;
+		border: 0px;
+		width: 20px;
+		height: 20px;
+		
+	
+	
+	}
+	#ikincikutu{ 
+		width: 270px; 
+		height: 400px; 
+		background: white;
+		color:#000000; 
+		margin:auto 250px 50px ; 
+		border: 1px double #000000;
+		border-radius: 10px 10px;
+		transform: translate(0%,-1.5%);
+		
+	}
+	#ikincibaslik{
+		width: 130px; 
+		height: 35px; 
+		background: white; 
+		color:black; 
+		margin:10px auto auto 250px;
+		border:1px double #000000 ;
+		border-radius: 10px 10px 0px 0px;
+		float: inherit;
+		border-bottom: medium;	
+		
+	}
+	
+	#text2{
+		border: 0;
+		padding: 10px 10px;
+		color:#CF4042;
+		margin:10px auto auto 5px;
+		font-weight: bold;
+		font-size: 600;
+	    position:absolute;
+		border: medium;
+		
+	}
+	
+	#metin2
+	{
+		width: 250px;
+		height: 150px;
+		border: 0;
+		margin: 50px 25px auto 5px;
+		
+	}
+	
+	#buton3{
+		width: 250px;
+		height: 150px;
+		font-weight: 900;
+		margin: auto 10px ;
+		border: 0;
+	}
+	#textalani{
+		width: 250px;
+		height: 150px;
+		border: 0;
+		margin: auto 10px;
+	
+		
+	}
+	#kisim{
+		
+		width: 250px;
+		height: 150px;
+		margin:auto auto;
+		background-color:#F3C7B3;
+		margin: auto 25px 0px 1px  ;
+		border: 0;
+		
+		
+		
+	}
+	
+	#dosya{
+		margin: 10px auto auto;
+		height: 10px;
+		width: 200px;
+		background-color:#D88A8B; 
+		
+	}
+	#resim{
+		width: 250px;
+		height: 150px;
+		margin: auto 25px 0px 10px ;
+		border: 0px solid ;
+		
+        background-image:url("2.PNG");
+		position: absolute;
+		
+		transform: translate(0.1%);
+	
+		
+		
+		
+	}
+	
+	#yazi{
+		
+		position: absolute;
+		transform: translate(180%);
+			bottom: 10%;
+		
+ 
+				
+	}
+	#gorselyazisi
+	{
+		transform: translate(-17%, -100% );
+		
+	}
+	</style>
+	<script type="text/javascript">
+		
+	function indir()
+		
+		{ 
+			
+			
+				
+       
+	
+			
+		document.getElementById("metin2").value=document.getElementById("textalani").value
+			
+		
+		document.getElementById("buton3").src=document.getElementById("kisim").src
+			
+			document.getElementById("text2").value=document.getElementById("text1").value
+			 
+			
+			
+			document.getElementById("textalani").value="New description"
+			
+			document.getElementById("text1").value="New title"
+			
+			document.getElementById("kisim").src="2.PNG"
+			document.getElementById("button2").style.backgroundColor="gray"
+			document.getElementById("yazi").style.display="block"
+	
+			
+}
+		 
+	function birsey(){
+		
+		document.getElementById("button2").style.backgroundColor="green"
+		document.getElementById("yazi").style.display="none"
+	
+	}
+		
+		
+	
+			
+			
+			
+		
+
+		
+		
+		
+	
+	
+	
+		
+	
+	
+	
+	</script>
+	
+</head>
+<body bgcolor="#BCBCBC" >
+	
+	
+<div id="beyazkutu">
+<div id="anabaslik" >
+  <header > &nbsp New Title</header>
+</div>
+	
+	<div id="anakutu">
+	
+		
+	<input type="text" name="text1" id="text1" value="New title" ><br/><br/><br/>
+	<textarea id="textalani">New description</textarea>
+		
+				
+		
+			<div id="resim"  style="align-items: center"  >
+			<input style="display:none;" id="dosya" class="form-control" type="file" onchange="document.getElementById('kisim').src = window.URL.createObjectURL(this.files[0])" onclick="birsey()"/>
+			
+	
+	<label for="dosya" id="yazi"  ><font size="7" ><b>+</b></font ><p id="gorselyazisi">GÖRSEL</p></label>
+				
+	<img id="kisim" alt="görsel" src="2.PNG"  >
+	
+				<input type="button" id="button2"  onclick="indir()"  />	
+		</div>		
+		
+	</div>
+
+	<div id="gricizgi"></div>
+	
+	<div id="ikincibaslik">
+	<header> &nbsp New Title</header>
+	</div>
+	
+	
+	<div id="ikincikutu"> 
+		
+		<input type="text" id="text2" value="">
+		<textarea type="text" id="metin2" value=""></textarea>
+		<input type="image" src="1.jpg"  alt="submit" id="buton3" >
+		
+	</div>
+	
+	
+	
+	
+
+
+	</div>
+	
+</body>
+	
+	
+	
+</html>
